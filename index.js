@@ -20,7 +20,7 @@ module.exports = function (inClasses) {
 
   return function (inTarget) {
     var targetPrototype = inTarget.prototype;
-    inClasses.forEach(function(item){
+    args.forEach(function(item){
       var clazz = item, clazzPrototype = item.prototype;
       //get static method:
       var staticMemebers = getOwnPropertyNames(clazz);
