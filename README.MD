@@ -5,7 +5,7 @@
 ## usage:
 + npm install && :
 ```javascript
-// npm install afeiship/mixin-decorator
+// npm install afeiship/mixin-decorator --save
 import mixin from 'mixin-decorator';
 
 class A{
