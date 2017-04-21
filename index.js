@@ -2,11 +2,6 @@ var slice = Array.prototype.slice;
 var getOwnPropertyNames = Object.getOwnPropertyNames;
 
 //private:
-function toArgs(inClasses){
-  return Array.isArray(inClasses) ?  inClasses : slice.call(arguments);
-}
-
-//private:
 function coreMixin(inProps,inDest,inSrc){
     inProps.forEach(function(item){
       if (!(item in inDest)) {
@@ -16,7 +11,7 @@ function coreMixin(inProps,inDest,inSrc){
 }
 
 module.exports = function (inClasses) {
-  var args = toArgs(inClasses);
+  var args = Array.isArray(inClasses) ?  inClasses : slice.call(arguments);
 
   return function (inTarget) {
     var targetPrototype = inTarget.prototype;
