@@ -5,7 +5,7 @@ var getOwnPropertyNames = Object.getOwnPropertyNames;
 function coreMixin(inProps,inDest,inSrc){
     inProps.forEach(function(item){
       if (!(item in inDest)) {
-        inDest[item] = inSrc[item];
+        Object.defineProperty(inDest,item, Object.getOwnPropertyDescriptor(inSrc,item) );
       }
     });
 }
