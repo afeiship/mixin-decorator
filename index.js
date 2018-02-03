@@ -1,7 +1,7 @@
 var slice = Array.prototype.slice;
 var getOwnPropertyNames = Object.getOwnPropertyNames;
 var STRING = 'string';
-var MIXIN_PATH = 'mixin/'
+var MIXIN_PATH = 'mixins/'
 
 //private:
 function coreMixin(inProps,inDest,inSrc){
