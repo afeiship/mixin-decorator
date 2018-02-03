@@ -15,10 +15,7 @@ function coreMixin(inProps,inDest,inSrc){
 module.exports = function (inClasses) {
   var _args = Array.isArray(inClasses) ?  inClasses : slice.call(arguments);
   var args = _args.map(function(arg){
-    if (typeof arg === STRING) {
-      return require('mixins/' + arg).default;
-    }
-    return arg;
+    return typeof arg === STRING ? require(MIXIN_PATH + arg).default : arg;
   });
 
   return function (inTarget) {
