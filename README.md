@@ -69,33 +69,13 @@ module: {
     ]
 }
 ```
-## .babelrc
-```json
-{
-  "presets": [
-    "es2015",
-    "react",
-    "stage-0"
-  ],
-  "plugins": [
-    "transform-array-from",
-    "transform-class-properties",
-    "transform-es2015-spread",
-    "transform-object-rest-spread",
-    "transform-decorators-legacy",
-    [
-      "module-resolver",
-      {
-        "root": [
-          "."
-        ],
-        "alias": {
-          //NEED this config:
-          "mixins": "./src/components/mixins"
-        }
-      }
-    ]
-  ]
+## webpack resolve:(DO NOT USE .babelrc's resolve)
+```js
+resolve: {
+  extensions: ['.js', '.json', '.scss', '.css'],
+  alias:{
+    mixins: resolve(__dirname, '../src/components/mixins')
+  }
 }
 ```
 
