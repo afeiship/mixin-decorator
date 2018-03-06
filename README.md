@@ -74,6 +74,9 @@ module: {
 ```
 ## webpack resolve:(DO NOT USE .babelrc's resolve)
 ```js
+import {resolve, join} from 'path';
+
+
 resolve: {
   extensions: ['.js', '.json', '.scss', '.css'],
   alias:{
