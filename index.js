@@ -1,7 +1,7 @@
 var slice = Array.prototype.slice;
 var getOwnPropertyNames = Object.getOwnPropertyNames;
 var STRING = 'string';
-var MIXIN_PATH = 'mixins/'
+// var MIXIN_PATH = 'mixins/';
 
 //private:
 function coreMixin(inProps,inDest,inSrc){
@@ -15,7 +15,7 @@ function coreMixin(inProps,inDest,inSrc){
 module.exports = function (inClasses) {
   var _args = Array.isArray(inClasses) ?  inClasses : slice.call(arguments);
   var args = _args.map(function(arg){
-    return typeof arg === STRING ? require(MIXIN_PATH + arg).default : arg;
+    return typeof arg === STRING ? require('mixins/' + arg).default : arg;
   });
 
   return function (inTarget) {
