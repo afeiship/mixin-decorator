@@ -6,6 +6,5 @@
   "repository": "git@github.com:afeiship/mixin-decorator.git",
   "author": "feizheng <1290657123@qq.com>",
   "license": "MIT",
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

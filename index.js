@@ -14,9 +14,10 @@ function coreMixin(inProps,inDest,inSrc){
 
 module.exports = function (inClasses) {
   var _args = Array.isArray(inClasses) ?  inClasses : slice.call(arguments);
-  var args = _args.map(function(arg){
+  var isStatic = _args[0] === null;
+  var args = !isStatic ? _args.map(function(arg){
     return typeof arg === STRING ? require('mixins/' + arg).default : arg;
-  });
+  }) : _args;
 
   return function (inTarget) {
     var targetPrototype = inTarget.prototype;
