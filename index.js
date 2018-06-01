@@ -17,7 +17,7 @@ module.exports = function (inClasses) {
   var isStatic = _args[0] === null;
   var args = !isStatic ? _args.map(function(arg){
     return typeof arg === STRING ? require('mixins/' + arg).default : arg;
-  }) : _args;
+  }) : _args.slice(1);
 
   return function (inTarget) {
     var targetPrototype = inTarget.prototype;
