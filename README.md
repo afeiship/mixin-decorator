@@ -85,3 +85,8 @@ resolve: {
 }
 ```
 
+
+## todo list:
+- [ ] add @mixin(['on-chnage',':node-module' ]) in npm
+- [ ] add @mixin(['on-chnage',obj ]) for plain object
+- [ ] add unit test
