@@ -7,6 +7,7 @@
   "author": "feizheng <1290657123@qq.com>",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "rake-git": "github:afeiship/rake-git"
   }
 }
