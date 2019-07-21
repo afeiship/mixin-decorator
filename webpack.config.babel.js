@@ -2,11 +2,26 @@ import webpack from 'webpack';
 import { resolve } from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const relativeFile = (inFile) => {
-  return resolve(__dirname, inFile);
-};
-
 export default {
   entry: './test/index.js',
-  plugins: [new HtmlWebpackPlugin({})]
+  module: {
+    rules: [
+      {
+        test: /\.(js)$/,
+        use: ['babel-loader'],
+        include: [resolve(__dirname, 'test'), resolve(__dirname, './index')]
+      }
+    ]
+  },
+  resolve: {
+    alias: {
+      mixins: resolve(__dirname, 'test/mixins')
+    }
+  },
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new webpack.ProvidePlugin({
+      mixin: resolve(__dirname, './index.js')
+    })
+  ]
 };
