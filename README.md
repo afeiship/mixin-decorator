@@ -4,9 +4,10 @@
 
 ## resources
 + https://github.com/webpack/webpack/issues/2031
++ https://github.com/mbasso/react-decoration
 
-## usage:
-+ npm install && :
+## usage
++ npm install
 ```javascript
 // npm install afeiship/mixin-decorator --save
 import mixin from 'mixin-decorator';
