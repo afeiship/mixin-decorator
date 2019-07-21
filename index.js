@@ -1,8 +1,6 @@
 var slice = Array.prototype.slice;
 var getOwnPropertyNames = Object.getOwnPropertyNames;
-var STRING = 'string';
 var FUNC = 'function';
-var path = require('path');
 
 //private:
 function coreMixin(inProps, inDest, inSrc) {
