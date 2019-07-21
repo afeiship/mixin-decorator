@@ -5,6 +5,7 @@
 ## resources
 + https://github.com/webpack/webpack/issues/2031
 + https://github.com/mbasso/react-decoration
++ https://github.com/jayphelps/core-decorators
 
 ## usage
 + npm install
