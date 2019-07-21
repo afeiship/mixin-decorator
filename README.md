@@ -87,6 +87,6 @@ resolve: {
 
 
 ## todo list:
-- [ ] add @mixin(['on-chnage',':node-module' ]) in npm
-- [ ] add @mixin(['on-chnage',obj ]) for plain object
+- [x] add @mixin(['on-chnage',obj ]) for plain object
+- [ ] NOT_SUPPORT add @mixin(['on-chnage',':node-module' ]) in npm
 - [ ] add unit test

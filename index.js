@@ -1,6 +1,7 @@
 var slice = Array.prototype.slice;
 var getOwnPropertyNames = Object.getOwnPropertyNames;
 var FUNC = 'function';
+var OBJ = 'object';
 
 //private:
 function coreMixin(inProps, inDest, inSrc) {
@@ -20,7 +21,7 @@ function requireTarget(inTarget) {
   switch (true) {
     case typeOf === FUNC:
       return inTarget;
-    case typeOf === 'object':
+    case typeOf === OBJ:
       return inTarget.default || inTarget;
     default:
       var target = require('mixins/' + inTarget);
