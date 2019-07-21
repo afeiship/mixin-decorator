@@ -2,7 +2,7 @@
 > A decorator for mixins that doesn&#39;t overwrite existing methods.
 
 
-## resources:
+## resources
 + https://github.com/webpack/webpack/issues/2031
 
 ## usage:
