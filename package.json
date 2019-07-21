@@ -7,7 +7,8 @@
   "author": "feizheng <1290657123@qq.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

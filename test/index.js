@@ -1,9 +1,10 @@
-@mixin(['test1', 'test2'])
+@mixin(['test1', 'test2', 'test-obj', require('./sub')])
 class App {
   start() {
-    console.log('hello!');
     this.sayHi();
     this.jump();
+    console.log(this.obj1(), this);
+    this.sub1();
   }
 }
 

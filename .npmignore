@@ -2,8 +2,12 @@ build
 src
 config
 static
+test
+Rakefile
+Gemfile
+webpack.config.js
 .babelrc
 .gitignore
+.prettierrc
 yarn.lock
-test
-webpack.config.js
+

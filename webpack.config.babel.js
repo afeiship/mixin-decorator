@@ -9,7 +9,10 @@ export default {
       {
         test: /\.(js)$/,
         use: ['babel-loader'],
-        include: [resolve(__dirname, 'test'), resolve(__dirname, './index')]
+        include: [
+          resolve(__dirname, 'test'),
+          resolve(__dirname, './index')
+        ]
       }
     ]
   },
