@@ -1,17 +1,15 @@
 # mixin-decorator
 > A decorator for mixins that doesn&#39;t overwrite existing methods.
 
-
-## resources
-+ https://github.com/webpack/webpack/issues/2031
-+ https://github.com/mbasso/react-decoration
-+ https://github.com/jayphelps/core-decorators
+## installation
+```shell
+npm install @feizheng/mixin-decorator --save
+```
 
 ## usage
-+ npm install
+- npm install
 ```javascript
-// npm install afeiship/mixin-decorator --save
-import mixin from 'mixin-decorator';
+import mixin from '@feizheng/mixin-decorator';
 
 class A{
   static VERSION= '1.0';
@@ -74,6 +72,7 @@ module: {
     ]
 }
 ```
+
 ## webpack resolve:(DO NOT USE .babelrc's resolve)
 ```js
 import {resolve, join} from 'path';
@@ -87,8 +86,12 @@ resolve: {
 }
 ```
 
-
-## todo list:
+## todo list
 - [x] add @mixin(['on-chnage',obj ]) for plain object
 - [ ] NOT_SUPPORT add @mixin(['on-chnage',':node-module' ]) in npm
 - [ ] add unit test
+
+## resources
+- https://github.com/webpack/webpack/issues/2031
+- https://github.com/mbasso/react-decoration
+- https://github.com/jayphelps/core-decorators
