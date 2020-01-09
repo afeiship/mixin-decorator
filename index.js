@@ -48,5 +48,6 @@ module.exports = function(inClasses) {
       coreMixin(staticMemebers, inTarget, clazz);
       coreMixin(instanceMemebers, targetPrototype, clazzPrototype);
     });
+    return inTarget;
   };
 };
