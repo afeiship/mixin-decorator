@@ -31,5 +31,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "keywords": [
+    "es6",
+    "mixin",
+    "decorator"
+  ]
 }
