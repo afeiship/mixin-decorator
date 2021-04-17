@@ -1,15 +1,15 @@
 # mixin-decorator
-> A decorator for mixins that doesn&#39;t overwrite existing methods.
+> A decorator for mixins that doesn't overwrite existing methods.
 
 ## installation
 ```shell
-npm install @feizheng/mixin-decorator --save
+npm install @jswork/mixin-decorator
 ```
 
 ## usage
 - npm install
 ```javascript
-import mixin from '@feizheng/mixin-decorator';
+import mixin from '@jswork/mixin-decorator';
 
 class A{
   static VERSION= '1.0';

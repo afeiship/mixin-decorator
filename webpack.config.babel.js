@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
-  entry: './test/index.js',
+  entry: './__tests__/index.js',
   module: {
     rules: [
       {

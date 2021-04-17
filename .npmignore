@@ -2,12 +2,15 @@ build
 src
 config
 static
-test
+__tests__
 Rakefile
 Gemfile
 webpack.config.js
 .babelrc
 .gitignore
 .prettierrc
+.editorconfig
+.release-it.json
 yarn.lock
-
+webpack.config.babel.js
+jsconfig.json
